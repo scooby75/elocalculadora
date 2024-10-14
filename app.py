@@ -63,6 +63,6 @@ if st.button("Calcular"):
     handicap_asiatico = calcular_handicap_asiatico(probabilidade)
 
     # Exibir resultados
-    st.write(f"Probabilidade ajustada de vitória do Mandante: {probabilidade:.2f}%")
-    st.write(f"Odd calculada: {odd:.2f}")
-    st.write(f"Linha de Handicap Asiático sugerida: {handicap_asiatico}")
+    st.write(f"Probabilidade: {probabilidade:.2f}%")
+    st.write(f"Odd Justa: {odd:.2f}")
+    st.write(f"Linha HA: {handicap_asiatico}")
