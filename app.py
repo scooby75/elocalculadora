@@ -6,7 +6,7 @@ def calcular_probabilidade_ajustada(elo_mandante, elo_visitante, xg_mandante, xg
     prob_elo = (elo_mandante / 100) / ((elo_mandante / 100) + (elo_visitante / 100))
 
     # Ajuste com base nos valores de xG (ponderando com 20% do peso de xG)
-    ajuste_xg = ((xg_mandante - xg_visitante) * 0.2)
+    ajuste_xg = ((xg_mandante - xg_visitante) * 0.1)
     
     # Probabilidade final com ajuste de xG
     prob_final = prob_elo + ajuste_xg
