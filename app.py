@@ -32,7 +32,7 @@ elo_visitante = st.number_input("Informe o ELO do Visitante (0 a 100)", min_valu
 xg_mandante = st.number_input("Informe o xG do Mandante", min_value=0.0, value=1.5, step=0.1)
 xg_visitante = st.number_input("Informe o xG do Visitante", min_value=0.0, value=1.2, step=0.1)
 
-# Botão para calcular a probabilidade ajustada e a odd
+# Botão para calcular a probabilidade ajustada, a odd e a linha de handicap asiático
 if st.button("Calcular Probabilidade, Odd e Linha de Handicap"):
     probabilidade = calcular_probabilidade_ajustada(elo_mandante, elo_visitante, xg_mandante, xg_visitante) * 100
     odd = 100 / probabilidade if probabilidade > 0 else float('inf')  # Evitar divisão por zero
